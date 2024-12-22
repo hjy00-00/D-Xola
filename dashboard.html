@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>D-Xola</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <style>
+        .card img {
+            cursor: pointer;
+            margin-left: 70px; 
+        }
+        #mainImage {
+            max-width: 100%;
+            margin-right: 70px; 
+            height: auto;
+        }
+    </style>
+    <style>
+        .text-warning {
+            margin-left: 100px; /* 글씨를 왼쪽으로부터 20px 밀기 */
+            font-size: 1rem;
+
+        }
+        
+        .text-gray-800 {
+            margin-left: 10px; /* 하단 글씨도 동일하게 밀기 */
+            
+        }
+        </style>
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon">
+                    <img src="img/12345.png" alt="" id="image", width="70", height="70"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">D-xola <sup></sup></div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Introduction</span>
+                </a>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">                       
+                        <a class="collapse-item" href="dxola.html">D-Xola</a>
+                        <a class="collapse-item" href="team.html">Team</a>
+                    </div>
+                </div>
+            </li>
+            
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="dashboard.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Dashboard</span></a>
+
+                </li>
+
+            <hr class="sidebar-divider my-0">
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Design</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">                       
+                        <a class="collapse-item" href="design.html">Design</a>
+                        <a class="collapse-item" href="pipe.html">Pipe</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="mockup.html">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>Mock - Up</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="visitor.html">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Visitor</span></a>
+            </li>
+
+            <!-- Divider -->
+           
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Content Row -->
+                    <div class="row">
+                        <!-- 태양광 강도 카드 -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-auto">
+                                            <img src="img/pow.png" width="75" id="sunlight-icon">
+                                        </div>
+                                        <div class="col mr-2">
+                                            <div class="m-1 font-weight-bold text-primary">태양광 강도</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800" id="sunLight">" 얼마 "</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 태양광 발전량 카드 -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-auto">
+                                            <img src="img/make.png" width="75" id="electricity-icon">
+                                        </div>
+                                        <div class="col mr-2">
+                                            <div class="m-1 font-weight-bold text-success">태양광 발전량</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800" id="electricityProduction">" 얼마 "</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 패널 각도 카드 -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-info shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-auto">
+                                            <img src="img/ang.png" width="75" id="angle-icon">
+                                        </div>
+                                        <div class="col mr-2">
+                                            <div class="m-1 font-weight-bold text-info">패널 각도</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800" id="panelAngle">" 얼마 "</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 배터리 잔량 카드 -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-warning shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-auto">
+                                            <img src="img/vol.png" width="75" id="battery-icon">
+                                        </div>
+                                        <div class="col mr-2">
+                                            <div class="m-1 font-weight-bold text-warning">배터리 잔량</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800" id="battery">" 얼마 "</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">D-Xola 데이터</h6>
+                        </div>
+                        <div class="Chart">
+                            <div id="mqtt-status" class="alert alert-warning" role="alert">
+                                실시간 그래프는 로컬 서버 주소를 이용해야합니다. (D-xola 팀에게 문의 부탁드립니다)
+                            </div>
+                            <div class="text-center" style="width: 100%; height: 100%;"> 
+                                <!-- 기본 이미지 위치 (그래프를 그릴 캔버스) -->
+                                <canvas id="myChart" class="mt-3 mb-4" style="width: 100%; height: 200px;"></canvas>
+                            </div>                            
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- Content Column -->
+                        <div class="col-lg-6 mb-4">
+                            <!-- 데이터 표시 영역 -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">환경 데이터</h6>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="h5 mb-0 mr-3 font-weight-bold text-gray-800">온도 <span class="float-right" id="temp">20°C</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar bg-danger progress-bar-temp" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <h4 class="h5 mb-0 mr-3 font-weight-bold text-gray-800">습도 <span class="float-right" id="reh">40%</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar bg-warning progress-bar-reh" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <h4 class="h5 mb-0 mr-3 font-weight-bold text-gray-800">풍향 <span class="float-right" id="wd">60°</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar progress-bar-wd-direction" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <h4 class="h5 mb-0 mr-3 font-weight-bold text-gray-800">풍속 <span class="float-right" id="ws">80%</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar bg-info progress-bar-wd" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 mb-4">
+                            <!-- Illustrations -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">조도센서 실시간 데이터</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>조도센서 1</th>
+                                                    <th>조도센서 2</th>
+                                                    <th>조도센서 3</th>
+                                                    <th>조도센서 4</th>
+                                                    <th>모터 1 각도</th>
+                                                    <th>모터 2 각도</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- 데이터는 JavaScript로 동적으로 추가됩니다. -->
+                                              </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Hanhwa Ocean Digital DX Academy &copy; D-Xola</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+
+    <!-- MQTT 통신을 통한 실시간 데이터 적용 -->
+    <script>
+        // 페이지 로드 시 테이블 비우기
+        document.addEventListener('DOMContentLoaded', function() {
+            const tableBody = document.querySelector('#dataTable tbody');
+            if (tableBody) {
+                tableBody.innerHTML = ''; // 테이블 내용 비우기
+            }
+        });
+
+        // WebSocket 서버 연결
+        const socket = new WebSocket('ws://192.168.234.93:3000'); // WebSocket 서버 주소
+        
+        // WebSocket 연결이 열리면
+        socket.onopen = function() { console.log('Connected to WebSocket server'); };
+
+        // WebSocket으로 메시지가 수신되면
+        socket.onmessage = function(event) {
+            const latestMessages = JSON.parse(event.data); // 최신 메시지 배열
+            
+            // 테이블 업데이트
+            updateTable(latestMessages);
+
+            // 상단 업데이트 (최신 메시지를 전달)
+            updateTop(latestMessages[latestMessages.length - 1]);
+        };
+
+        // WebSocket 연결이 닫히면
+        socket.onclose = function() { console.log('Disconnected from WebSocket server'); };
+
+        // WebSocket 오류 발생 시
+        socket.onerror = function(error) { console.error('WebSocket Error:', error); };
+
+        // 상단을 업데이트하는 함수
+        function updateTop(latestMessage) {
+            const angleSun = document.getElementById('sunLight');
+            const angleElectricity = document.getElementById('electricityProduction');
+            const angleAngle = document.getElementById('panelAngle');
+            const angleBattery = document.getElementById('battery');
+            
+            // 태양 세기    
+            if (angleSun) {
+                angleSun.innerHTML =
+                `${latestMessage.sunLight || 'No data'} Lux`;
+            }
+
+            // 전기 생산량
+            if (angleElectricity) {
+                angleElectricity.innerHTML =
+                `${latestMessage.electricityProduction || ''}0 W`;
+            }
+
+            // 패널 각도를 업데이트
+            angleElement = document.getElementById('panelAngle');
+
+            if (angleAngle) {
+                angleAngle.innerHTML =
+                `Horizontal: ${latestMessage.horizontal || 'No data'}°<br>Vertical: ${latestMessage.vertical || 'No data'}°`;
+            }
+            
+            // 베터리량을 업데이트
+            angleElement = document.getElementById('battery');
+            console.log(latestMessage);  // latestMessage 객체를 콘솔에 출력하여 배터리 값이 있는지 확인
+
+
+            if (angleBattery) {
+                angleBattery.innerHTML = `${latestMessage.batteryLevel || '0'} %`;
+            }
+        }
+    
+        // 오른쪽 아래 테이블에 최신 데이터를 업데이트하는 함수                                                 
+        let messageHistory = [];
+        function updateTable(messages) {
+            console.log("Updating table with messages:", messages);
+            const tableBody = document.querySelector('#dataTable tbody');
+            
+            // 메시지를 messageHistory 배열에 추가 (아이콘 데이터)
+            messageHistory = [...messages, ...messageHistory]; // 최신 데이터를 앞에 추가
+            // 50개가 넘을 경우 가장 오래된 데이터 삭제
+            if (messageHistory.length > 50) {
+                messageHistory.pop(); // 가장 오래된 데이터 제거
+            }
+
+            // 테이블을 비우고 새 데이터 추가
+            tableBody.innerHTML = ''; // 기존 데이터 비우기
+
+            // 최신 메시지 배열을 테이블에 추가 (최대 5개)
+            messages.slice(0, 5).forEach((message) => {
+                const row = tableBody.insertRow(0); // 새로운 행 추가
+
+                // 각 센서와 모터의 값을 테이블 셀에 추가
+                row.insertCell(0).textContent = message.ldrlt || 'No data'; // 조도센서 1
+                row.insertCell(1).textContent = message.ldrrt || 'No data'; // 조도센서 2
+                row.insertCell(2).textContent = message.ldrld || 'No data'; // 조도센서 3
+                row.insertCell(3).textContent = message.ldrrd || 'No data'; // 조도센서 4
+                row.insertCell(4).textContent = message.horizontal || 'No data'; // 모터 1 각도
+                row.insertCell(5).textContent = message.vertical || 'No data'; // 모터 2 각도
+            });                                                    
+        }
+    </script>
+
+    <!-- 울릉도 환경 데이터로 막대바 시각화(왼쪽 아래)  -->
+    <script>
+        let csvData = [];
+        let currentIndex = 0;
+
+        // 서버에서 CSV 파일을 읽는 함수
+        async function loadCSV() {
+            try {
+                const response = await fetch('Ulleungdo_Environmental_Data.csv'); // 서버에 업로드된 CSV 파일 경로
+                const text = await response.text(); // CSV 파일을 텍스트로 읽기
+                parseCSV(text); // CSV 텍스트를 파싱
+                setInterval(updateData, 5000); // 5초마다 데이터 업데이트
+            } catch (error) {
+                console.error('CSV 파일을 읽는 중 오류 발생:', error);
+            }
+        }
+
+        // CSV 파일을 파싱하여 데이터를 배열로 저장하는 함수
+        function parseCSV(text) {
+            const rows = text.split('\n');
+            csvData = rows.map(row => {
+                const columns = row.split(',');
+                return {
+                    지점: columns[0],
+                    지점명: columns[1],
+                    일시: columns[2],
+                    기온: parseFloat(columns[3]),
+                    풍속: parseFloat(columns[4]),
+                    풍향: columns[5],
+                    습도: parseFloat(columns[6]),
+                    일조: parseFloat(columns[7])
+                };
+            });
+        }
+
+        // 데이터 업데이트 함수
+        function updateData() {
+            if (csvData.length === 0) return;
+
+            // 현재 데이터 가져오기
+            const data = csvData[currentIndex];
+
+            // 각 요소에 값 업데이트
+            document.getElementById('temp').textContent = `${data.기온}°C`;
+            document.getElementById('reh').textContent = `${data.습도}%`;
+            document.getElementById('wd').textContent = `${data.풍향}`;
+            document.getElementById('ws').textContent = `${data.풍속} m/s`;
+
+            // 진행 바의 width와 aria-valuenow 업데이트
+            document.querySelector('.progress-bar-temp').style.width = `${mapToProgressBar(data.기온, -30, 50)}%`;
+            document.querySelector('.progress-bar-temp').setAttribute('aria-valuenow', mapToProgressBar(data.기온, -30, 50));
+
+            document.querySelector('.progress-bar-reh').style.width = `${mapToProgressBar(data.습도, 0, 100)}%`;
+            document.querySelector('.progress-bar-reh').setAttribute('aria-valuenow', mapToProgressBar(data.습도, 0, 100));
+
+            document.querySelector('.progress-bar-wd-direction').style.width = `${mapToProgressBar(data.풍향, 0, 360)}%`;
+            document.querySelector('.progress-bar-wd-direction').setAttribute('aria-valuenow', mapToProgressBar(data.풍향, 0, 360));
+
+            document.querySelector('.progress-bar-wd').style.width = `${mapToProgressBar(data.풍속, 0, 50)}%`;
+            document.querySelector('.progress-bar-wd').setAttribute('aria-valuenow', mapToProgressBar(data.풍속, 0, 50));
+
+            // 마지막 데이터 후 처음으로 돌아가기
+            currentIndex = (currentIndex + 1) % csvData.length;
+        }
+
+        // 값을 최솟값과 최댓값을 기준으로 0-100 범위로 매핑하는 함수
+        function mapToProgressBar(value, minValue, maxValue) {
+            return Math.min(Math.max(((value - minValue) / (maxValue - minValue)) * 100, 0), 100); // 0과 100 사이로 제한
+        }
+
+        // 페이지 로드 시 CSV 데이터 로드
+        window.onload = loadCSV;
+    </script>
+
+    <!-- 아이콘을 눌러 실시간 그래프 표기 -->
+    <script>
+        // 그래프의 색상 설정
+        const colorOptions = {
+            sunLight: 'rgba(255, 99, 132, 1)',
+            electricityProduction: 'rgba(54, 162, 235, 1)',
+            panelAngleHorizontal: 'rgba(75, 192, 192, 1)',
+            panelAngleVertical: 'rgba(153, 102, 255, 1)',
+            batteryLevel: 'rgba(255, 206, 86, 1)',
+        };
+    
+        // 페이지 로드 시 메시지 표시
+        document.addEventListener('DOMContentLoaded', () => {
+            const mqttStatusElement = document.getElementById('mqtt-status');
+            const chartContainer = document.getElementById('chart-container');
+            mqttStatusElement.style.display = 'block';
+            chartContainer.style.display = 'none';
+        });
+    
+        // 아이콘 클릭 이벤트를 처리하는 함수
+        function onIconClick(sensorType) {
+            // 데이터가 들어오면 경고 문구를 숨기고 그래프를 표시
+            const mqttStatusElement = document.getElementById('mqtt-status');
+            const chartContainer = document.getElementById('chart-container');
+            mqttStatusElement.style.display = 'none'; // 메시지 숨기기
+            chartContainer.style.display = 'block'; // 그래프 표시
+    
+            if (mqttStatusElement) {
+            mqttStatusElement.style.display = 'none'; // 경고 문구 숨기기
+            }
+
+            if (chartContainer) {
+                chartContainer.style.display = 'block'; // 그래프 표시
+            }
+
+            let datasets = [];
+            switch (sensorType) {
+                case 'sunLight':
+                    datasets = [{
+                        label: 'Sunlight',
+                        data: messageHistory.map(msg => msg.sunLight || 0),
+                        borderColor: colorOptions.sunLight,
+                        fill: false,
+                    }];
+                    break;
+                case 'electricityProduction':
+                    datasets = [{
+                        label: 'Electricity Production',
+                        data: messageHistory.map(msg => msg.electricityProduction || 0),
+                        borderColor: colorOptions.electricityProduction,
+                        fill: false,
+                    }];
+                    break;
+                case 'panelAngle':
+                    datasets = [
+                        {
+                            label: 'Panel Angle (Horizontal)',
+                            data: messageHistory.map(msg => msg.horizontal || 0),
+                            borderColor: colorOptions.panelAngleHorizontal,
+                            fill: false,
+                        },
+                        {
+                            label: 'Panel Angle (Vertical)',
+                            data: messageHistory.map(msg => msg.vertical || 0),
+                            borderColor: colorOptions.panelAngleVertical,
+                            fill: false,
+                        }
+                    ];
+                    break;
+                case 'batteryLevel':
+                    datasets = [{
+                        label: 'Battery Level',
+                        data: messageHistory.map(msg => msg.batteryLevel || 0),
+                        borderColor: colorOptions.batteryLevel,
+                        fill: false,
+                    }];
+                    break;
+                default:
+                    datasets = [];
+                    break;
+            }
+    
+            updateChart(datasets);
+        }
+    
+        // 그래프를 업데이트하는 함수
+        function updateChart(datasets) {
+            const ctx = document.getElementById('myChart').getContext('2d');
+    
+            // 기존 차트 삭제
+            if (window.chartInstance) {
+                window.chartInstance.destroy();
+            }
+    
+            // 새로운 차트 생성
+            window.chartInstance = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: Array.from({ length: datasets[0].data.length }, (_, index) => `Time ${index + 1}`),
+                    datasets: datasets,
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Time',
+                            },
+                        },
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Sensor Values',
+                            },
+                            ticks: {
+                                stepSize: 10, // y축 값 간격
+                            },
+                        },
+                    },
+                },
+            });
+        }
+    </script>
+    
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+        console.log("DOM fully loaded and parsed");
+
+        const chartCanvas = document.getElementById('myChart').getContext('2d');
+        let chartInstance = null;
+
+        // 최신 50개의 데이터를 추출하는 함수
+        function getLatestData(sensorType) {
+            switch (sensorType) {
+                case 'sunLight':
+                    return messageHistory.slice(-50).map(msg => msg.sunLight || 0);
+                case 'electricityProduction':
+                    return messageHistory.slice(-50).map(msg => msg.electricityProduction || 0);
+                case 'panelAngle':
+                    return {
+                        horizontal: messageHistory.slice(-50).map(msg => msg.horizontal || 0),
+                        vertical: messageHistory.slice(-50).map(msg => msg.vertical || 0)
+                    };
+                case 'batteryLevel':
+                    return messageHistory.slice(-50).map(msg => msg.batteryLevel || 0);
+                default:
+                    return [];
+            }
+        }
+
+        // 차트를 업데이트하는 함수
+        function updateChart(sensorType) {
+            const data = getLatestData(sensorType);
+
+            if (chartInstance) {
+                chartInstance.destroy();
+            }
+
+            let datasets;
+
+            if (sensorType === 'panelAngle') {
+                datasets = [
+                    {
+                        label: 'Horizontal Angle',
+                        data: data.horizontal,
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        fill: false,
+                    },
+                    {
+                        label: 'Vertical Angle',
+                        data: data.vertical,
+                        borderColor: 'rgba(255, 159, 64, 1)',
+                        fill: false,
+                    }
+                ];
+            }
+            else {
+                datasets = [
+                    {
+                        label: sensorType.charAt(0).toUpperCase() + sensorType.slice(1),
+                        data: data,
+                        borderColor: {
+                            sunLight: 'rgba(255, 99, 132, 1)',
+                            electricityProduction: 'rgba(54, 162, 235, 1)',
+                            batteryLevel: 'rgba(153, 102, 255, 1)',
+                        }[sensorType],
+                        fill: false,
+                    }
+                ];
+            }
+
+            chartInstance = new Chart(chartCanvas, {
+                type: 'line',
+                data: {
+                    labels: Array.from({ length: data.length }, (_, index) => `Data ${index + 1}`),
+                    datasets: datasets,
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Recent Data'
+                            },
+                            ticks: {
+                                autoSkip: true,
+                                maxTicksLimit: 10,
+                            },
+                            grid: {
+                                display: false,
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Value'
+                            },
+                            beginAtZero: true,
+                        }
+                    }
+                }
+            });
+        }
+
+        // 주기적으로 데이터 변화를 확인하여 차트 업데이트
+        setInterval(() => {
+            if (messageHistory.length > 0) {
+                const activeSensor = document.querySelector('.active-sensor').id; // 활성 센서 아이콘 ID
+                updateChart(activeSensor);
+            }
+        }, 2000); // 2초 간격으로 확인
+
+        // 아이콘 클릭 이벤트 처리
+        document.getElementById('sunlight-icon').addEventListener('click', () => {
+            console.log("Sunlight icon clicked");
+            document.querySelector('.active-sensor')?.classList.remove('active-sensor');
+            document.getElementById('sunlight-icon').classList.add('active-sensor');
+            updateChart('sunLight');
+        });
+
+        document.getElementById('electricity-icon').addEventListener('click', () => {
+            console.log("Electricity icon clicked");
+            document.querySelector('.active-sensor')?.classList.remove('active-sensor');
+            document.getElementById('electricity-icon').classList.add('active-sensor');
+            updateChart('electricityProduction');
+        });
+
+        document.getElementById('angle-icon').addEventListener('click', () => {
+            console.log("Angle icon clicked");
+            document.querySelector('.active-sensor')?.classList.remove('active-sensor');
+            document.getElementById('angle-icon').classList.add('active-sensor');
+            updateChart('panelAngle');
+        });
+
+        document.getElementById('battery-icon').addEventListener('click', () => {
+            console.log("Battery icon clicked");
+            document.querySelector('.active-sensor')?.classList.remove('active-sensor');
+            document.getElementById('battery-icon').classList.add('active-sensor');
+            updateChart('batteryLevel');
+        });
+    });
+    </script>
+</body>
+
+</html>
